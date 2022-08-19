@@ -1,0 +1,39 @@
+.cs-modal {
+    position: fixed;
+    z-index: 1;
+    padding-top: 5rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.cs-modal-content {
+    background-color: #fefefe;
+    margin: 0px auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.cs-flex{
+    display: flex;
+}
+
+.cs-content-end{
+    justify-content: end;
+}
+.cs-modal-close {
+    color: #aaaaaa;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,94 @@
+.cs-table {
+    .cs-header {
+        display: flex;
+        height: 50px;
+        min-height: 50px;
+        width: 100%;
+        white-space: nowrap;
+        justify-content: flex-start;
+        font-size: 0.9rem;
+        &-row {
+            display: block;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+        }
+
+        &-cell {
+            min-width: 150px;
+            width: 150px;
+            display: inline-flex;
+            padding: 1rem;
+            font-weight: bold;
+        }
+        &-no-border{
+            box-shadow: none;
+        }
+        &.h-100{
+            height: 100%;
+        }
+    }
+
+    .cs-content {
+        display: block;
+        width: 100%;
+        
+        &-container {
+            display: flex;
+            white-space: nowrap;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &-cell {
+            display: inline-flex;
+            padding: 1rem;
+            min-width: 150px;
+            width: 150px;
+            text-transform: capitalize;
+            position: relative;
+            font-size: 0.9rem;
+            .badge {
+                position: absolute;
+                top: 18px;
+                bottom: 0;
+                right: 0;
+                left: 0;
+            }
+
+            .available {
+                border-radius: 50%;
+                width: 0.75rem;
+                height: 0.75rem;
+                background-color: #82D035;
+            }
+        }
+
+        &-row {
+            border: 1px solid rgba(0, 0, 0, 0.075);
+            &.selected{
+                background-color: rgba(0, 0, 0, 0.03); 
+            }
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.02);
+            }
+        }
+    }
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 1rem 0 1rem;
+    line-height: 1.4rem;
+    min-height: 2.5rem;
+    color: #FFF;
+    border: none;
+}
+
+.btn-primary{
+    background: #2a70e8;
+}

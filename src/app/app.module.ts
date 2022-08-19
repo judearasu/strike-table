@@ -4,9 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { CSTableComponent } from './components/cs-table/cs-table.component';
+import { CSModalComponent } from './components/cs-modal/cs-modal.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CSTableComponent,
+    CSModalComponent
   ],
   imports: [
     BrowserModule,
